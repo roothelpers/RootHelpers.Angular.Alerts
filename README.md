@@ -6,7 +6,7 @@ This is a simple alert component, to help show different level of alerts and eas
 
 ## Installation
 ```sh
-npm install --save @theo4u/ng-alert
+npm i root-helpers-alerts
 ```
 
 
@@ -23,9 +23,7 @@ imports: [
   ]
 ```
 
-## Demo
-[HERE](https://theo4u.github.io/ngAlert)
-
+ 
 ## Usage
 ```
   <app-root-helpers-alerts [(message)]="message" [dismissable]="true"></app-root-helpers-alerts>
