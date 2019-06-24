@@ -1,28 +1,42 @@
 # RootHelpersAlerts
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+This is a simple alert component, to help show different level of alerts and easy configurations on how you want it to act. Also, supports confirmation alert. Oh yea! easy to style to follow your own feel.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Installation
+```sh
+npm install --save @theo4u/ng-alert
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Update your `app.module.ts` **imports** array  
+```typescript
+import { RootHelpersAlertsComponent } from './root-helpers-alerts/root-helpers-alerts.component';
 
-## Running unit tests
+...
+imports: [
+    AppComponent,
+    RootHelpersAlertsComponent,
+    ....
+  ]
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Demo
+[HERE](https://theo4u.github.io/ngAlert)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-"# RootHelpers.Angular.Alerts" 
+## Usage
+```
+  <app-root-helpers-alerts [(message)]="message" [dismissable]="true"></app-root-helpers-alerts>
+```
+* **message**: is a two bounded attribute which takes in `IMessage`
+  ```typescript
+        export interface IMessage {
+        type: MessageType,
+        message: string,
+        title?: string
+        } 
+  ```
+  `type` can be `MessageType.info`, `MessageType.success`, `MessageType.error` or `MessageType.warning`
+ 

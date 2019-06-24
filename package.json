@@ -1,6 +1,15 @@
 {
+  "name": "@AhmedOumezzine/RootHelpersAlerts",
+  "version": "0.0.1-development",
+  "author": "Ahmed Oumezzine <ahmedoumezzine@outlook.fr>",
+  "repository": "https://github.com/roothelpers/RootHelpers.Angular.Alerts.git",
+  "homepage": "https://github.com/roothelpers/RootHelpers.Angular.Alerts",
+  "bugs": {
+    "url": "https://github.com/roothelpers/RootHelpers.Angular.Alerts/issues"
+  },
+
   "name": "root-helpers-alerts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +18,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~8.0.1",
     "@angular/common": "~8.0.1",
