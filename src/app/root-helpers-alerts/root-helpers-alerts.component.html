@@ -1,0 +1,7 @@
+
+<div *ngIf="message" class="alert alert-{{message.type}}" >
+  <h2 *ngIf="message.title">{{message.title}}</h2>
+  <span [innerHTML]="message.message">
+  </span>
+
+</div>
